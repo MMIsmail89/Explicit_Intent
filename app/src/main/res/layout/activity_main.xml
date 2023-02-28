@@ -7,6 +7,20 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/main_tv_explicitIntent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="#FFC107"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/explicit_intent"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
     <EditText
         android:id="@+id/main_et_name"
         android:layout_width="match_parent"
@@ -63,5 +77,81 @@
         android:gravity="center_horizontal|center_vertical"
         android:hint="@string/result_from_activity_3"
         android:textColor="@color/purple_700" />
+
+    <TextView
+        android:id="@+id/main_tv_implicitIntent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="#FFC107"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/implicit_intent"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_btn_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:background="@color/design_default_color_primary"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/call"
+        android:textColor="#FFFF" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_btn_callFriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+
+        android:textAllCaps="false"
+        android:textSize="16sp"
+
+        android:background="@color/design_default_color_primary"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/call_friend"
+        android:textColor="#FFFF" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_btn_openWEB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:background="@color/design_default_color_primary"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/open_web"
+        android:textColor="#FFFF" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_btn_openMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+
+        android:textAllCaps="false"
+        android:textSize="16sp"
+
+        android:background="@color/design_default_color_primary"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/open_MAP"
+        android:textColor="#FFFF" />
 
 </LinearLayout>

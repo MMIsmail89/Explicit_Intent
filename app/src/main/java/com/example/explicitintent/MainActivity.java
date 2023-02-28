@@ -6,6 +6,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -49,6 +50,36 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, activity3_REQ_Code);
             }
         });
+
+        binding.mainBtnCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                startActivity(intent);
+            }
+        });
+        binding.mainBtnCallFriend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:+201029547116"));
+                startActivity(intent);
+            }
+        });
+        binding.mainBtnOpenWEB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=السوق, محمد بدوى, ثان المنيا"));
+                startActivity(intent);
+            }
+        });
+        binding.mainBtnOpenMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("http://www.google.com"));
+                startActivity(intent);
+            }
+        });
+
 
     }
 
