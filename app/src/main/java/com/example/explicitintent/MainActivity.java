@@ -68,14 +68,16 @@ public class MainActivity extends AppCompatActivity {
         binding.mainBtnOpenWEB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=السوق, محمد بدوى, ثان المنيا"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse
+                        ("https://www.google.com/"));
                 startActivity(intent);
             }
         });
         binding.mainBtnOpenMap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("http://www.google.com"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse
+                        ("geo:0,0?q=السوق, محمد بدوى, ثان المنيا"));
                 startActivity(intent);
             }
         });
