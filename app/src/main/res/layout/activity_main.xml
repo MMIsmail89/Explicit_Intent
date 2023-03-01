@@ -85,9 +85,10 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:background="#FFC107"
+
         android:gravity="center_horizontal|center_vertical"
         android:text="@string/implicit_intent"
+        android:background="#FFC107"
         android:textColor="@color/design_default_color_primary"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -161,9 +162,14 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
+        android:background="#FFC107"
         android:gravity="center_horizontal|center_vertical"
-        android:hint="@string/end"
-        android:inputType="textPersonName"
+        android:text="@string/end"
+        android:textColor="@color/design_default_color_primary"
+
+        android:textSize="24sp"
+        android:textStyle="bold"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
